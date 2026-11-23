@@ -24,7 +24,7 @@ export function PageHero({ eyebrow, title, intro, photo, alt, children, position
           <p className="mt-7 max-w-xl text-[17px] leading-[1.75] text-white/70">{intro}</p>
           {children && <div className="mt-9 flex flex-wrap gap-3">{children}</div>}
         </div>
-        <div className="relative min-h-[300px] sm:min-h-[400px] lg:col-span-6 lg:min-h-[560px]">
+        <div className="relative aspect-[4/3] lg:col-span-6 lg:aspect-auto lg:min-h-[540px]">
           <Photo id={photo} alt={alt} priority sizes="(min-width:1024px) 50vw, 100vw" position={position} className="absolute inset-0 img-cover" />
           <div className="absolute inset-y-0 left-0 hidden w-24 bg-gradient-to-r from-ink to-transparent lg:block" />
         </div>

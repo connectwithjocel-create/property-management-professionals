@@ -42,11 +42,11 @@ export default function Home() {
               Talk to our team: <strong className="font-semibold text-ink">{site.phone}</strong>
             </a>
           </div>
-          <div className="relative lg:col-span-6">
+          <div className="relative lg:col-span-6 lg:pb-14">
             <div className="relative aspect-[4/3] w-full overflow-hidden lg:mt-10">
               <Photo id="6b007a288368d0ae483cf6e2" alt="Victorian rental home with a wraparound porch at 634 Ashland St S in Cambridge, MN" priority sizes="(min-width:1024px) 50vw, 100vw" />
             </div>
-            <div className="absolute -left-4 bottom-10 hidden w-[44%] border-[6px] border-cream shadow-[0_30px_60px_-30px_rgba(25,28,32,0.5)] sm:block lg:-left-16">
+            <div className="absolute -left-14 bottom-0 hidden w-[34%] border-[6px] border-cream shadow-[0_30px_60px_-30px_rgba(25,28,32,0.5)] lg:block">
               <div className="aspect-[4/3]"><Photo id="6b007be02c68ebcf46344450" alt="Pokegama Haven lake home at sunset" sizes="25vw" /></div>
             </div>
             <p className="absolute right-0 top-6 bg-ink px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-white">634 Ashland St S · Cambridge</p>
@@ -139,7 +139,7 @@ export default function Home() {
       {/* OWNER BENEFITS */}
       <section className="bg-ink text-white">
         <div className="grid lg:grid-cols-2">
-          <div className="relative min-h-[340px] lg:min-h-[640px]">
+          <div className="relative aspect-[4/3] lg:self-center">
             <Photo id="6b007a2262e09e38ada16ab6" alt="Apartment building at 150 S Irving Ave in Rush City, MN" sizes="(min-width:1024px) 50vw, 100vw" className="absolute inset-0 img-cover" />
           </div>
           <div className="px-5 py-20 sm:px-10 lg:px-16 lg:py-24 xl:pr-[max(4rem,calc((100vw-1240px)/2+2rem))]">
