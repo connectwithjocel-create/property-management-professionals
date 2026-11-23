@@ -43,7 +43,7 @@ export default function Home() {
             </a>
           </div>
           <div className="relative lg:col-span-6">
-            <div className="relative aspect-[4/5] w-full overflow-hidden sm:aspect-[5/4] lg:aspect-auto lg:h-full lg:min-h-[620px]">
+            <div className="relative aspect-[4/3] w-full overflow-hidden lg:mt-10">
               <Photo id="6b007a288368d0ae483cf6e2" alt="Victorian rental home with a wraparound porch at 634 Ashland St S in Cambridge, MN" priority sizes="(min-width:1024px) 50vw, 100vw" />
             </div>
             <div className="absolute -left-4 bottom-10 hidden w-[44%] border-[6px] border-cream shadow-[0_30px_60px_-30px_rgba(25,28,32,0.5)] sm:block lg:-left-16">
@@ -112,7 +112,7 @@ export default function Home() {
       <section className="bg-stone py-20 md:py-28">
         <div className="wrap grid gap-14 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <div className="lg:sticky lg:top-32">
+            <div className="lg:sticky lg:top-40">
               <SectionHead eyebrow="Management services" title="The work behind a well-run rental.">
                 <p>From the first showing to the last turnover, here is what our team handles for property owners.</p>
               </SectionHead>
@@ -196,11 +196,9 @@ export default function Home() {
             </SectionHead>
             <div className="reveal lg:col-span-5 lg:text-right"><Link href="/vacation-rentals" className="btn-line text-ink">Explore vacation rentals</Link></div>
           </div>
-          <div className="mt-14 grid gap-4 lg:grid-cols-12 lg:grid-rows-2">
-            <div className="lg:col-span-7 lg:row-span-2"><StayCard v={poke} tall sizes="(min-width:1024px) 58vw, 100vw" /></div>
-            {otherStays.slice(0, 2).map((v) => <div key={v.slug} className="lg:col-span-5"><StayCard v={v} /></div>)}
+          <div className="mt-14 grid gap-4 md:grid-cols-2">
+            {[poke, ...otherStays].map((v) => <StayCard key={v.slug} v={v} sizes="(min-width:768px) 50vw, 100vw" />)}
           </div>
-          <div className="mt-4"><StayCard v={otherStays[2]} sizes="100vw" /></div>
         </div>
       </section>
 

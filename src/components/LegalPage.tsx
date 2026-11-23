@@ -16,7 +16,7 @@ export default function LegalPage({ doc }: { doc: LegalDoc }) {
       <section className="py-16 md:py-24">
         <div className="wrap grid gap-12 lg:grid-cols-12">
           <nav aria-label="Sections" className="lg:col-span-4">
-            <ol className="space-y-2 text-[14px] lg:sticky lg:top-32">
+            <ol className="space-y-2 text-[14px] lg:sticky lg:top-40">
               {doc.sections.map((s, i) => (
                 <li key={s.title}><a href={`#${slug(s.title)}`} className="flex gap-3 text-muted hover:text-ink"><span className="w-6 text-gold-deep">{i + 1}.</span>{s.title}</a></li>
               ))}
@@ -25,7 +25,7 @@ export default function LegalPage({ doc }: { doc: LegalDoc }) {
           <article className="max-w-none text-[15.5px] leading-[1.8] text-charcoal lg:col-span-8">
             <p className="border-l-2 border-gold bg-cream p-5 text-[15px]">{doc.preface}</p>
             {doc.sections.map((s, i) => (
-              <section key={s.title} id={slug(s.title)} className="scroll-mt-32 border-b border-line py-10">
+              <section key={s.title} id={slug(s.title)} className="scroll-mt-40 border-b border-line py-10">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-deep">Section {String(i + 1).padStart(2, "0")}</p>
                 <h2 className="mt-2 font-display text-4xl font-semibold uppercase">{s.title}</h2>
                 <div className="mt-4 space-y-4">

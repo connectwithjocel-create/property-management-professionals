@@ -27,7 +27,7 @@ export default function RentalsPage() {
         <Link href="/rental-inquiry" className="btn-line-light">Rental Inquiry</Link>
       </PageHero>
 
-      <section id="browse" className="scroll-mt-24 bg-cream py-16 md:py-24">
+      <section id="browse" className="scroll-mt-36 bg-cream py-16 md:py-24">
         <div className="wrap">
           <div className="mb-10 grid gap-6 lg:grid-cols-12 lg:items-end">
             <SectionHead className="lg:col-span-7" eyebrow="Residential rentals" title="Our property collection." />

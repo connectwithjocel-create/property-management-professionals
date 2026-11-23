@@ -34,9 +34,9 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="wrap flex h-[74px] items-center justify-between gap-6">
+      <div className="wrap flex h-[92px] items-center justify-between gap-6 lg:h-[112px]">
         <Link href="/" className="flex shrink-0 items-center" aria-label={`${site.name} home`}>
-          <img src={ghl(brand.logo, 300, 90)} alt={site.name} width={150} height={113} className="h-[58px] w-auto" />
+          <img src={ghl(brand.logo, 400, 90)} alt={site.name} width={150} height={113} className="h-[68px] w-auto lg:h-[84px]" />
         </Link>
         <nav aria-label="Primary" className="hidden lg:block">
           <ul className="flex items-center gap-8">
@@ -59,7 +59,7 @@ export default function Header() {
           </button>
         </div>
       </div>
-      <div id="mobile-nav" hidden={!open} className="fixed inset-x-0 bottom-0 top-[74px] md:top-[110px] overflow-y-auto bg-ink text-white lg:hidden">
+      <div id="mobile-nav" hidden={!open} className="fixed inset-x-0 bottom-0 top-[92px] md:top-[128px] overflow-y-auto bg-ink text-white lg:hidden">
         <nav aria-label="Mobile" className="wrap flex min-h-full flex-col py-8">
           <ul className="divide-y divide-white/10 border-y border-white/10">
             {[{ label: "Home", href: "/" }, ...nav].map((n, i) => (

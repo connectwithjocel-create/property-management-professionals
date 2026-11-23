@@ -13,7 +13,7 @@ export function bedSummary(r: Rental) {
 export function RentalCard({ r, large = false, sizes = "(min-width:1024px) 33vw, 100vw" }: { r: Rental; large?: boolean; sizes?: string }) {
   return (
     <Link href={`/property-listed#${r.slug}`} className="group reveal block">
-      <div className={`zoom-wrap relative bg-stone ${large ? "aspect-[4/3] lg:aspect-[5/4]" : "aspect-[4/3]"}`}>
+      <div className="zoom-wrap relative aspect-[4/3] bg-stone">
         <Photo id={r.photo} alt={r.alt} sizes={sizes} />
         <span className="absolute left-0 top-5 bg-white px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">{r.type}</span>
       </div>
@@ -34,7 +34,7 @@ export function RentalCard({ r, large = false, sizes = "(min-width:1024px) 33vw,
 export function StayCard({ v, tall = false, sizes = "(min-width:1024px) 40vw, 100vw" }: { v: Vacation; tall?: boolean; sizes?: string }) {
   return (
     <Link href={`/vacation-rentals/${v.slug}`} className="group reveal relative block h-full overflow-hidden bg-ink text-white">
-      <div className={`zoom-wrap h-full ${tall ? "min-h-[420px] lg:min-h-[640px]" : "min-h-[300px]"}`}>
+      <div className="zoom-wrap relative aspect-[4/3]">
         <Photo id={v.cover} alt={v.coverAlt} sizes={sizes} className="absolute inset-0 img-cover" />
       </div>
       <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/25 to-transparent" />

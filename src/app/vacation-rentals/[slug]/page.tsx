@@ -52,12 +52,12 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           </div>
         </div>
         <div className="mx-auto max-w-[1440px] lg:px-8">
-          <div className="grid gap-2 md:grid-cols-4 md:grid-rows-2">
-            <div className="relative aspect-[4/3] md:col-span-2 md:row-span-2 md:aspect-auto md:min-h-[520px]">
+          <div className={v.gallery.length ? "grid gap-2 md:grid-cols-4 md:grid-rows-2" : "mx-auto max-w-[1040px]"}>
+            <div className={`relative aspect-[4/3] ${v.gallery.length ? "md:col-span-2 md:row-span-2 md:aspect-auto" : ""}`}>
               <Photo id={v.cover} alt={v.coverAlt} priority sizes="(min-width:768px) 50vw, 100vw" className="absolute inset-0 img-cover" />
             </div>
             {v.gallery.slice(0, 4).map((g) => (
-              <div key={g.id} className="relative hidden aspect-[4/3] md:block md:aspect-auto">
+              <div key={g.id} className="relative hidden aspect-[4/3] md:block">
                 <Photo id={g.id} alt={g.alt} sizes="25vw" className="absolute inset-0 img-cover" />
               </div>
             ))}
@@ -103,7 +103,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           </div>
 
           <aside className="lg:col-span-5">
-            <div className="sticky top-32 bg-ink p-8 text-white sm:p-10">
+            <div className="sticky top-40 bg-ink p-8 text-white sm:p-10">
               <p className="eyebrow eyebrow-light">Plan your stay</p>
               <h2 className="display-md mt-4 text-white">Book direct &amp; save</h2>
               <p className="mt-4 text-[15px] text-white/70">Share your dates and guest count. We&apos;ll follow up with availability and pricing. An inquiry does not reserve the property or charge you.</p>

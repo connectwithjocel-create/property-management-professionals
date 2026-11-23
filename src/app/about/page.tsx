@@ -50,7 +50,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="team" className="scroll-mt-24 bg-ink py-20 text-white md:py-28">
+      <section id="team" className="scroll-mt-36 bg-ink py-20 text-white md:py-28">
         <div className="wrap">
           <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
             <div className="reveal relative lg:col-span-5">

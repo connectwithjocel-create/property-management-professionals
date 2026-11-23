@@ -45,7 +45,7 @@ export default function RentalBrowser({ rentals, towns }: { rentals: Rental[]; t
 
       <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
         {list.map((r) => (
-          <article key={r.slug} id={r.slug} className="group flex scroll-mt-32 flex-col border border-line bg-white transition-shadow duration-300 hover:shadow-[0_24px_50px_-30px_rgba(25,28,32,0.45)] target:outline target:outline-2 target:outline-gold">
+          <article key={r.slug} id={r.slug} className="group flex scroll-mt-40 flex-col border border-line bg-white transition-shadow duration-300 hover:shadow-[0_24px_50px_-30px_rgba(25,28,32,0.45)] target:outline target:outline-2 target:outline-gold">
             <div className="zoom-wrap relative aspect-[4/3] bg-stone">
               <Photo id={r.photo} alt={r.alt} sizes="(min-width:1280px) 33vw, (min-width:768px) 50vw, 100vw" />
               <span className="absolute left-0 top-4 bg-ink px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-white">{r.type}</span>

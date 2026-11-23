@@ -66,8 +66,8 @@ export default function OwnersPage() {
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4 lg:col-span-7">
-            <div className="reveal zoom-wrap aspect-[3/4]"><Photo id="6b007a22268fda5bfe62d198" alt="Rambler rental home at 904 Dellwood St S in Cambridge" sizes="30vw" /></div>
-            <div className="reveal zoom-wrap mt-12 aspect-[3/4]"><Photo id="6b007c6a62e09e38ada1c4c2" alt="Lake-facing patio at Pokegama Haven vacation rental" sizes="30vw" /></div>
+            <div className="reveal zoom-wrap aspect-[4/3]"><Photo id="6b007a22268fda5bfe62d198" alt="Rambler rental home at 904 Dellwood St S in Cambridge" sizes="30vw" /></div>
+            <div className="reveal zoom-wrap mt-12 aspect-[4/3]"><Photo id="6b007c6a62e09e38ada1c4c2" alt="Lake-facing patio at Pokegama Haven vacation rental" sizes="30vw" /></div>
           </div>
         </div>
       </section>

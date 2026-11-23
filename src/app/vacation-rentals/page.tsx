@@ -31,7 +31,7 @@ export default function VacationPage() {
         </div>
       </section>
 
-      <section id="stays" className="scroll-mt-24 bg-cream py-20 md:py-28">
+      <section id="stays" className="scroll-mt-36 bg-cream py-20 md:py-28">
         <div className="wrap">
           <SectionHead eyebrow="Four properties, six ways to book" title="Choose your stay.">
             <p>Send us a direct booking inquiry and we will confirm availability, pricing and reservation terms. Every stay is also listed on Airbnb.</p>
