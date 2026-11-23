@@ -24,8 +24,8 @@ export default function Footer() {
     <footer className="bg-ink text-white/70">
       <div className="wrap grid gap-12 py-16 md:grid-cols-12 md:py-20">
         <div className="md:col-span-4">
-          <Link href="/" className="inline-block bg-white px-5 py-4" aria-label={`${site.name} home`}>
-            <img src={ghl(brand.logo, 600, 95)} alt={site.name} width={150} height={113} loading="lazy" className="h-28 w-auto" />
+          <Link href="/" className="inline-block bg-white px-4 py-3" aria-label={`${site.name} home`}>
+            <span className="block h-[104px] w-[168px] overflow-hidden"><img src={ghl(brand.logo, 600, 95)} alt={site.name} width={600} height={600} loading="lazy" className="h-full w-full object-cover" /></span>
           </Link>
           <p className="mt-6 max-w-xs text-[14px] leading-relaxed">
             Rental homes for everyday living, vacation properties for your next Minnesota getaway, and local management for property owners.
