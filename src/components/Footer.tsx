@@ -25,7 +25,7 @@ export default function Footer() {
       <div className="wrap grid gap-12 py-16 md:grid-cols-12 md:py-20">
         <div className="md:col-span-4">
           <Link href="/" className="inline-block bg-white px-5 py-4" aria-label={`${site.name} home`}>
-            <img src={ghl(brand.logo, 400, 90)} alt={site.name} width={150} height={113} loading="lazy" className="h-24 w-auto" />
+            <img src={ghl(brand.logo, 600, 95)} alt={site.name} width={150} height={113} loading="lazy" className="h-28 w-auto" />
           </Link>
           <p className="mt-6 max-w-xs text-[14px] leading-relaxed">
             Rental homes for everyday living, vacation properties for your next Minnesota getaway, and local management for property owners.

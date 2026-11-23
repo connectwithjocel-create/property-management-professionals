@@ -34,9 +34,9 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="wrap flex h-[92px] items-center justify-between gap-6 lg:h-[112px]">
+      <div className="wrap flex h-[108px] items-center justify-between gap-6 lg:h-[136px]">
         <Link href="/" className="flex shrink-0 items-center" aria-label={`${site.name} home`}>
-          <img src={ghl(brand.logo, 400, 90)} alt={site.name} width={150} height={113} className="h-[68px] w-auto lg:h-[84px]" />
+          <img src={ghl(brand.logo, 600, 95)} alt={site.name} width={150} height={113} className="h-[84px] w-auto lg:h-[108px]" />
         </Link>
         <nav aria-label="Primary" className="hidden lg:block">
           <ul className="flex items-center gap-8">
@@ -59,7 +59,7 @@ export default function Header() {
           </button>
         </div>
       </div>
-      <div id="mobile-nav" hidden={!open} className="fixed inset-x-0 bottom-0 top-[92px] md:top-[128px] overflow-y-auto bg-ink text-white lg:hidden">
+      <div id="mobile-nav" hidden={!open} className="fixed inset-x-0 bottom-0 top-[108px] md:top-[144px] overflow-y-auto bg-ink text-white lg:hidden">
         <nav aria-label="Mobile" className="wrap flex min-h-full flex-col py-8">
           <ul className="divide-y divide-white/10 border-y border-white/10">
             {[{ label: "Home", href: "/" }, ...nav].map((n, i) => (

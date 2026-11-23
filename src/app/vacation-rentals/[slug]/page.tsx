@@ -103,7 +103,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
           </div>
 
           <aside className="lg:col-span-5">
-            <div className="sticky top-40 bg-ink p-8 text-white sm:p-10">
+            <div className="sticky top-48 bg-ink p-8 text-white sm:p-10">
               <p className="eyebrow eyebrow-light">Plan your stay</p>
               <h2 className="display-md mt-4 text-white">Book direct &amp; save</h2>
               <p className="mt-4 text-[15px] text-white/70">Share your dates and guest count. We&apos;ll follow up with availability and pricing. An inquiry does not reserve the property or charge you.</p>

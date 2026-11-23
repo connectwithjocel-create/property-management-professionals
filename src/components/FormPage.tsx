@@ -27,7 +27,7 @@ export default function FormPage(p: Props) {
         <div className="relative bg-ink text-white lg:col-span-5">
           <Photo id={p.photo} alt={p.alt} priority sizes="(min-width:1024px) 42vw, 100vw" className="absolute inset-0 img-cover opacity-30" />
           <div className="absolute inset-0 bg-gradient-to-b from-ink/70 to-ink" />
-          <div className="relative px-5 py-16 sm:px-8 lg:sticky lg:top-[160px] lg:py-24 lg:pl-[max(2rem,calc((100vw-1240px)/2+2rem))] lg:pr-12">
+          <div className="relative px-5 py-16 sm:px-8 lg:sticky lg:top-[184px] lg:py-24 lg:pl-[max(2rem,calc((100vw-1240px)/2+2rem))] lg:pr-12">
             <p className="eyebrow eyebrow-light">{p.eyebrow}</p>
             <h1 className="display-xl mt-6 text-white">{p.title}</h1>
             <p className="mt-6 max-w-md text-[16px] text-white/75">{p.intro}</p>

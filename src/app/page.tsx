@@ -112,7 +112,7 @@ export default function Home() {
       <section className="bg-stone py-20 md:py-28">
         <div className="wrap grid gap-14 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <div className="lg:sticky lg:top-40">
+            <div className="lg:sticky lg:top-48">
               <SectionHead eyebrow="Management services" title="The work behind a well-run rental.">
                 <p>From the first showing to the last turnover, here is what our team handles for property owners.</p>
               </SectionHead>
