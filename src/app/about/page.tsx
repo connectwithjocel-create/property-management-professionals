@@ -54,7 +54,7 @@ export default function AboutPage() {
         <div className="wrap">
           <div className="grid gap-12 lg:grid-cols-12 lg:items-center">
             <div className="reveal relative lg:col-span-5">
-              <div className="aspect-[4/5] overflow-hidden bg-slate">
+              <div className="mx-auto aspect-[2/3] max-w-[460px] overflow-hidden bg-slate">
                 <Photo id={bob.photo} alt={`${bob.name}, ${bob.role}`} sizes="(min-width:1024px) 40vw, 100vw" position="center top" />
               </div>
               <span className="absolute -bottom-4 left-6 bg-gold px-4 py-2 text-[12px] font-semibold uppercase tracking-[0.16em] text-ink">{bob.role}</span>
@@ -74,7 +74,7 @@ export default function AboutPage() {
             <ul className="mt-12 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-5">
               {crew.map((m, i) => (
                 <li key={m.name} className={`reveal ${i % 2 ? "lg:mt-12" : ""}`}>
-                  <div className="aspect-[3/4] overflow-hidden bg-slate">
+                  <div className="aspect-[2/3] overflow-hidden bg-slate">
                     <Photo id={m.photo} alt={`${m.name}, ${m.role}`} sizes="(min-width:1024px) 20vw, 50vw" position="center top" />
                   </div>
                   <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-gold">{m.role}</p>
