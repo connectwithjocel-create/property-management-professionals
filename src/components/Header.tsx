@@ -36,7 +36,7 @@ export default function Header() {
       </div>
       <div className="wrap flex h-[108px] items-center justify-between gap-6 lg:h-[136px]">
         <Link href="/" className="flex shrink-0 items-center" aria-label={`${site.name} home`}>
-          <span className="block h-[84px] w-[136px] overflow-hidden lg:h-[108px] lg:w-[176px]"><img src={ghl(brand.logo, 600, 95)} alt={site.name} width={600} height={600} className="h-full w-full object-cover" style={{ objectPosition: "50% 50%" }} /></span>
+          <span className="block h-[84px] w-[118px] overflow-hidden lg:h-[108px] lg:w-[152px]"><img src={ghl(brand.logo, 600, 95)} alt={site.name} width={600} height={600} className="h-full w-full object-cover" style={{ objectPosition: "50% 46%" }} /></span>
         </Link>
         <nav aria-label="Primary" className="hidden lg:block">
           <ul className="flex items-center gap-8">
