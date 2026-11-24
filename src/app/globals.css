@@ -31,7 +31,6 @@
 @layer components {
   .wrap { @apply mx-auto w-full max-w-[1240px] px-5 sm:px-8; }
   .eyebrow { @apply inline-flex items-center gap-3 font-sans text-[12px] font-semibold uppercase tracking-[0.18em] text-gold-deep; }
-  .eyebrow::before { content: ""; @apply h-px w-8 bg-gold; }
   .eyebrow-light { @apply text-gold-soft; }
   .display-xl { @apply font-display font-bold uppercase; font-size: clamp(3rem, 7.4vw, 6.6rem); line-height: 0.9; }
   .display-lg { @apply font-display font-bold uppercase; font-size: clamp(2.4rem, 5vw, 4.25rem); line-height: 0.94; }

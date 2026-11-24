@@ -114,6 +114,8 @@ export type Vacation = {
   cover: string;
   coverAlt: string;
   gallery: { id: string; alt: string }[];
+  // Photos from the stay's own Airbnb listing (used where Media Storage has none), shown uncropped.
+  listingPhotos?: { src: string; alt: string }[];
   airbnbId?: string;
   options?: StayOption[];
   note?: string;
@@ -200,8 +202,14 @@ export const vacations: Vacation[] = [
     guests: 4, bedrooms: 1, baths: 1, beds: 1,
     cover: "6ac63e9b22bc27f58fb72a0c", coverAlt: "Historic brick building with a painted vintage sign on Main Street in North Branch, MN",
     gallery: [],
+    listingPhotos: [
+      { src: "https://a0.muscache.com/im/pictures/miso/Hosting-53028668/original/902e1358-c953-4f88-9bc4-d566754beb31.jpeg", alt: "Open living area and kitchen island in the Nostalgia Room loft" },
+      { src: "https://a0.muscache.com/im/pictures/miso/Hosting-53028668/original/f29b478b-8a43-4873-83ca-6f0c17373df6.jpeg", alt: "Bedroom with a wall bed in the Nostalgia Room loft" },
+      { src: "https://a0.muscache.com/im/pictures/miso/Hosting-53028668/original/46937f68-de19-4708-b252-8a417ca51afc.jpeg", alt: "Living room with tall windows and a smart TV in the Nostalgia Room loft" },
+      { src: "https://a0.muscache.com/im/pictures/miso/Hosting-53028668/original/ed3c73b1-ff25-4b8e-a24c-8951c9f6bc0b.jpeg", alt: "Private deck beside the painted vintage sign on the historic brick building" },
+      { src: "https://a0.muscache.com/im/pictures/miso/Hosting-53028668/original/1a2d1775-e840-4720-9a3f-63ab8a9de3d7.jpeg", alt: "Main Street view of the Nostalgia Room building in downtown North Branch" },
+    ],
     airbnbId: "53028668",
-    note: "Only one Nostalgia Room photo is in Media Storage. Interior photos are needed.",
   },
 ];
 

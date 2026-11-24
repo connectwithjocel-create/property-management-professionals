@@ -117,7 +117,7 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
         </div>
       </section>
 
-      {v.gallery.length > 0 && (
+      {(v.gallery.length > 0 || v.listingPhotos?.length) && (
         <section className="bg-stone py-16 md:py-24">
           <div className="wrap">
             <SectionHead eyebrow="Gallery" title="Inside and out." />
@@ -125,6 +125,11 @@ export default async function StayPage({ params }: { params: Promise<{ slug: str
               {v.gallery.map((g) => (
                 <figure key={g.id} className="reveal zoom-wrap mb-3 break-inside-avoid">
                   <Photo id={g.id} alt={g.alt} sizes="(min-width:1024px) 33vw, 50vw" className="block h-auto w-full" />
+                </figure>
+              ))}
+              {v.listingPhotos?.map((g) => (
+                <figure key={g.src} className="reveal zoom-wrap mb-3 break-inside-avoid">
+                  <img src={`${g.src}?im_w=960`} srcSet={`${g.src}?im_w=480 480w, ${g.src}?im_w=960 960w`} sizes="(min-width:1024px) 33vw, 50vw" alt={g.alt} loading="lazy" decoding="async" className="block h-auto w-full" />
                 </figure>
               ))}
             </div>

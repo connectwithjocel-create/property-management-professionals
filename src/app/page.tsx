@@ -42,14 +42,11 @@ export default function Home() {
               Talk to our team: <strong className="font-semibold text-ink">{site.phone}</strong>
             </a>
           </div>
-          <div className="relative lg:col-span-6 lg:pb-14">
-            <div className="relative aspect-[4/3] w-full overflow-hidden lg:mt-10">
+          <div className="pb-12 lg:col-span-6 lg:self-center lg:pb-20 lg:pt-10">
+            <div className="relative aspect-[4/3] w-full overflow-hidden">
               <Photo id="6b007a288368d0ae483cf6e2" alt="Victorian rental home with a wraparound porch at 634 Ashland St S in Cambridge, MN" priority sizes="(min-width:1024px) 50vw, 100vw" />
+              <p className="absolute right-0 top-5 bg-ink px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-white">634 Ashland St S · Cambridge</p>
             </div>
-            <div className="absolute -left-14 bottom-0 hidden w-[34%] border-[6px] border-cream shadow-[0_30px_60px_-30px_rgba(25,28,32,0.5)] lg:block">
-              <div className="aspect-[4/3]"><Photo id="6b007be02c68ebcf46344450" alt="Pokegama Haven lake home at sunset" sizes="25vw" /></div>
-            </div>
-            <p className="absolute right-0 top-6 bg-ink px-3 py-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-white">634 Ashland St S · Cambridge</p>
           </div>
         </div>
       </section>
